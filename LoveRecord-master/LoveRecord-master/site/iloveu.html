@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love between Us</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body>
+    <audio src="./css/Yeu-Khac-Viet.mp3" autoplay="true" loop="loop"></audio>
+    <div id="back">
+        <div class="mask"></div>
+      
+        <div id="carousel"  class="carousel slide carousel-fade carousel-position">
+            <div class="carousel-inner" style="width: 100%;height: 100%;" id="background">
+                <div class="item active" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/1.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/33.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/2.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/3.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/4.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/5.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/6.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/7.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/8.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/9.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/10.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/11.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/12.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/13.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/14.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/15.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background:url(./img/31.jpg) center no-repeat;background-size: cover;"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal show" style="top:24%;">
+        <div class="modal-dialog" style="opacity: .9">
+            <div class="modal-content" style="opacity:.85">
+                <div class="modal-header">
+                    <h1 class="text-center" style="color: #A94442;font-family: 'JournalRegular', Arial, sans-serif;font-size: 7rem;">the times we together</h1>
+                    <p class="text-center small-title">D & H</p>
+                    <p class="text-center small-title">LOVING ON THE WAY</p>
+                </div>
+                <div class="modal-body text-center" style="line-height: 1.5rem;font-family: 'JournalRegular', Arial, sans-serif;font-size: 3rem;">
+                    <p>
+                        <span id="day" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="hour" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="minute" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="second" class="time-font"></span>
+                    </p>
+                    <p style="line-height: 1.5rem;font-family: 'JournalRegular', Arial, sans-serif;font-size: 3rem;">
+                        days/hours/min/sec
+                    </p>
+                    <p class="text-center" style="color:#A94442;font-size: 17px" id="say"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/count-time.js"></script>
+    <script>
+    $(function() {
+        
+        countTime('0/01/30 23:45', 'day', 'hour', 'minute', 'second');
+        var days = $('#day').text();
+    
+        var says = new Array(
+            "Em luôn bên anh, cảm ơn vì đã có anh",
+            "Tôi đã đi nhiều con đường và chụp nhiều bức ảnh, nhưng tôi chỉ yêu một người",
+            "Tôi thích nhìn bạn ăn",
+            "Khuôn mặt nhỏ nhắn dễ thương khi hoảng sợ",
+            "Cùng nhau đi ngắm hoa, đi qua biển hoa nắm tay nhau",
+            "Em là bông hoa đào đẹp nhất trong cuộc đời anh",
+            "Sáng sớm, đã lâu hơn buổi đầu",
+            "Điều ước mà tôi đã đánh mất ở Đài phun nước Trevi hẳn đã trở thành sự thật",
+            "Có anh ở bên, em là Tây Hồ đẹp nhất của anh",
+            "Chúng ta phải là chiến binh ẩm thực",
+            "Tôi yêu pizza ở đây và tôi chán pizza từ khắp nơi trên thế giới",
+            "Chỉ sau khi tốt nghiệp, tôi mới thấy rằng ngôi trường này thật đẹp, giống như bạn vậy.",
+            "Sau khi cầu xin đức Phật mấy kiếp, cuối cùng chúng ta cũng được ở bên nhau",
+            "Mình đã cùng nhau nhìn thấy cầu vồng. Tương truyền rằng sẽ rất hạnh phúc",
+            "Ảnh trên xe cũng có thể chụp rất đẹp",
+            "Bạn đã nói với tôi rằng đó là Golden Pavilion Temple nên tôi vẫn không biết nó thực sự được gọi là gì",
+            "Bạn nói rằng bạn muốn giảm cân, vì vậy chúng tôi bước vào EO của Vanke Plaza",
+            "Bánh dâu tây rất ngọt, nhưng tôi có thể ăn nó thành từng khối lớn, thật tuyệt phải không?",
+            "Nấp sau lưng tôi, tôi bảo vệ bạn",
+            "Cuối cùng thì tôi cũng có lý do để không vào cửa hàng quần áo!",
+            "Một con gấu to bằng tôi",
+            "Thật may mắn là chúng tôi vẫn ở bên nhau",
+            "Trà sữa rất hợp với bạn",
+            "Trốn trong góc để chụp ảnh bí mật, hehe",
+            "một con phố không tên. Anh thực sự muốn đưa em đi khắp nơi mà em đã sống hơn mười năm",
+            "Thời gian không ngừng trôi, yêu em hơn bao giờ hết, nắm lấy tay con trai, cùng nhau già đi"
+        );
+
+
+        var start = function() {
+            var index = 0;
+            var rate = 6000;
+            $('#say').text(says[(index++) % says.length]);
+         	var _play = function () {
+         		$('#say').hide();
+                $('#say').text(says[(index++) % says.length]);
+                $('#say').fadeToggle();
+                $('#carousel').carousel('next');
+         	};
+            setInterval(_play, rate);
+        }();
+
+    });
+    </script>
+</body>
+
+</html>
